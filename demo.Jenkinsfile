@@ -1,5 +1,5 @@
 pipeline {
-    agent { label 'dev' }
+    agent any
     environment {
         BRANCH_NAME = "${env.GIT_BRANCH}"
         COMMIT_SHA = "${env.GIT_COMMIT}"
